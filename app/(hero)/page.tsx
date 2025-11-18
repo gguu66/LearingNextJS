@@ -1,10 +1,9 @@
-import React from 'react';
-import { Button } from 'antd';
+import React from 'react'
 
-const Home = () => (
-  <div className="App">
-    <Button type="primary">Button</Button>
-  </div>
-);
-
-export default Home;
+export default function Page() {
+  return (
+    <div>
+      Home
+    </div>
+  )
+}
