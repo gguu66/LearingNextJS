@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono,ABeeZee } from "next/font/google";
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 import "./globals.css";
 import Header from "@/components/header";
 
@@ -22,7 +23,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={abeezee.className}>
-        {children}
+        <AntdRegistry>
+          {children}
+        </AntdRegistry>
       </body>
     </html>
   );
