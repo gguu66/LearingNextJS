@@ -1,11 +1,9 @@
 import React from 'react'
-import { notFound } from 'next/navigation'
 
 export default function page() {
-    notFound()
   return (
-    <div>
-      
+    <div className='flex mt-6 p-6 bg-gray-500 text-white rounded-lg'>
+      children
     </div>
   )
 }
