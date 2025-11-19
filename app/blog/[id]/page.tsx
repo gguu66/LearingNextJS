@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card } from 'antd';
 import {data} from '@/data'
-//import type { Metadata } from 'next';
 
 interface IProps {
     params: Promise<{id: string}>
