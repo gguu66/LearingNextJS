@@ -1,13 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,ABeeZee } from "next/font/google";
-import { AntdRegistry } from '@ant-design/nextjs-registry';
 import "./globals.css";
-import Header from "@/components/header";
-
-const abeezee = ABeeZee(
-  {subsets:["latin"],weight:'400'}
-)
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,11 +13,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={abeezee.className}>
-        <AntdRegistry>
+      <body>
           {children}
-        </AntdRegistry>
       </body>
     </html>
   );
